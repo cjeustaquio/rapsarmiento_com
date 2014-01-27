@@ -1,0 +1,31 @@
+
+/* Menu */
+header {
+  font-family: 'Lato', Helvetica, Arial, sans-serif;
+  font-weight: 300;
+  font-size: 18px;
+  text-transform: uppercase;
+  letter-spacing: 0.09em;
+
+  #wordmark {
+    font-weight: 400;
+    font-size: 22px;
+  }
+
+  a {
+    color: #000;
+    text-decoration: none;
+  }
+}
+
+/* Portfolio */
+.mfp-title {
+  font-size: smaller;
+  color: #f3f3f3;
+  padding-right: 50px;
+
+  a, a:visited {
+    color: #f3f3f3;
+    text-decoration: underline;
+  }
+}
