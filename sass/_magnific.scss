@@ -267,11 +267,14 @@ button {
       padding: 0;
       border: 0
   }
+
+
 }
 
 
 // Close icon
 .mfp-close {
+  display: none !important;
   width: 44px;
   height: 44px;
   line-height: 44px;
@@ -333,6 +336,7 @@ button {
 // Navigation arrows
 @if $include-arrows {
   .mfp-arrow {
+    display: none !important; // hiding to remove conflict with fullPage slider
     position: absolute;
     opacity: $controls-opacity;
     @if $IE7support {

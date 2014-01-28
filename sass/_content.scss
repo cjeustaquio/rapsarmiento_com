@@ -90,6 +90,16 @@ header {
     
   }
 
+  .controlArrow {
+    .next, .prev {
+      border-color: transparent transparent transparent rgba( 0, 0, 0, 0.5 ) !important;
+    }
+  }
+
+  button.mfp-close {
+    display: none;
+  }
+
 }
 
 #about {
@@ -98,4 +108,42 @@ header {
   -moz-background-size: contain;
   -o-background-size: contain;
   background-size: contain;
+
+  h1, p {
+    max-width: 494px;
+  }
+}
+
+#press {
+  ul {
+    list-style: none;
+    display: block;
+    margin: 0 auto;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+
+    li {
+      display: inline;
+      float: left;
+      margin-right: 10px;
+      width: 324px;
+      height: 405px;
+      border: 1px solid #d9d9d9;
+
+      &.snippet {
+        background: url( '../img/press-snippet.jpg' ) #fff no-repeat center center;  
+      }
+
+      &.pic {
+        background: url( '../img/press-pic.jpg' ) #fff no-repeat center center;
+      }
+      
+
+    }
+  }
+
+  ul li:last-child {
+    margin-right: 0;
+  }
 }

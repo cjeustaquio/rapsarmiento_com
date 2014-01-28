@@ -27,9 +27,12 @@
         // anchors: ['firstPage', 'secondPage', '3rdPage', '4thpage', 'lastPage']
         anchors: ['Home', 'Portfolio', 'About', 'Press', 'Contact'],
         menu: '#menu-container',
-        navigation: true,
+        navigation: false,
         navigationPosition: 'right',
-        navigationTooltips: ['Home', 'Portfolio', 'About', 'Press', 'Contact']
+        navigationTooltips: ['Home', 'Portfolio', 'About', 'Press', 'Contact'],
+        slidesNavigation: false,
+        slidesNavPosition: 'bottom',
+        scrollOverflow: true
       });
     });
   </script>
@@ -70,67 +73,100 @@
 
   <!-- Portfolio -->
   <div class="section" id="portfolio" data-anchor="portfolio">
-    <div class="content-container popup-gallery">
-      <ul class="clearfix">
-        <li><a href="img/portfolio/abe1.jpg" data-title="Client: <a href='http://abraham-espiritu.tumblr.com' target='_blank'>All Black Everything</a>&nbsp;&bull;&nbsp;Project: Clothing Brand Marketing&nbsp;&bull;&nbsp;Photographer: <a href='http://abraham-espiritu.tumblr.com' target='_blank'>Abe Espiritu</a>"><img src="img/portfolio/thumbs/abe1.jpg" width="158" height="108"></a></li>
-        <li><a href="img/portfolio/abe2.jpg" data-title="Client: <a href='http://abraham-espiritu.tumblr.com' target='_blank'>All Black Everything</a>&nbsp;&bull;&nbsp;Project: Clothing Brand Marketing&nbsp;&bull;&nbsp;Photographer: <a href='http://abraham-espiritu.tumblr.com' target='_blank'>Abe Espiritu</a>"><img src="img/portfolio/thumbs/abe2.jpg" width="158" height="108"></a></li>
-        <li><a href="img/portfolio/army1.jpg" data-title="Client: <a href='http://www.stephanieaquinosmith.com/' target='_blank'>Stephanie Smith</a>&nbsp;&bull;&nbsp;Project: Editorial&nbsp;&bull;&nbsp;Photographer: <a href='http://www.stephanieaquinosmith.com/' target='_blank'>Stephanie Smith</a>"><img src="img/portfolio/thumbs/army1.jpg" width="158" height="108"></a></li>
-        <li><a href="img/portfolio/army2.jpg" data-title="Client: <a href='http://www.stephanieaquinosmith.com/' target='_blank'>Stephanie Smith</a>&nbsp;&bull;&nbsp;Project: Editorial&nbsp;&bull;&nbsp;Photographer: <a href='http://www.stephanieaquinosmith.com/' target='_blank'>Stephanie Smith</a>"><img src="img/portfolio/thumbs/army2.jpg" width="158" height="108"></a></li>
-        <li><a href="img/portfolio/army3.jpg" data-title="Client: <a href='http://www.stephanieaquinosmith.com/' target='_blank'>Stephanie Smith</a>&nbsp;&bull;&nbsp;Project: Editorial&nbsp;&bull;&nbsp;Photographer: <a href='http://www.stephanieaquinosmith.com/' target='_blank'>Stephanie Smith</a>"><img src="img/portfolio/thumbs/army3.jpg" width="158" height="108"></a></li>
-        <li><a href="img/portfolio/army4.jpg" data-title="Client: <a href='http://www.stephanieaquinosmith.com/' target='_blank'>Stephanie Smith</a>&nbsp;&bull;&nbsp;Project: Editorial&nbsp;&bull;&nbsp;Photographer: <a href='http://www.stephanieaquinosmith.com/' target='_blank'>Stephanie Smith</a>"><img src="img/portfolio/thumbs/army4.jpg" width="158" height="108"></a></li>
+    <div class="slide">
+      <div class="content-container popup-gallery">
+        <ul class="clearfix">
+          <li><a href="img/portfolio/abe1.jpg" data-title="Client: <a href='http://abraham-espiritu.tumblr.com' target='_blank'>All Black Everything</a>&nbsp;&bull;&nbsp;Project: Clothing Brand Marketing&nbsp;&bull;&nbsp;Photographer: <a href='http://abraham-espiritu.tumblr.com' target='_blank'>Abe Espiritu</a>"><img src="img/portfolio/thumbs/abe1.jpg" width="158" height="108"></a></li>
+          <li><a href="img/portfolio/abe2.jpg" data-title="Client: <a href='http://abraham-espiritu.tumblr.com' target='_blank'>All Black Everything</a>&nbsp;&bull;&nbsp;Project: Clothing Brand Marketing&nbsp;&bull;&nbsp;Photographer: <a href='http://abraham-espiritu.tumblr.com' target='_blank'>Abe Espiritu</a>"><img src="img/portfolio/thumbs/abe2.jpg" width="158" height="108"></a></li>
+          <li><a href="img/portfolio/army1.jpg" data-title="Client: <a href='http://www.stephanieaquinosmith.com/' target='_blank'>Stephanie Smith</a>&nbsp;&bull;&nbsp;Project: Editorial&nbsp;&bull;&nbsp;Photographer: <a href='http://www.stephanieaquinosmith.com/' target='_blank'>Stephanie Smith</a>"><img src="img/portfolio/thumbs/army1.jpg" width="158" height="108"></a></li>
+          <li><a href="img/portfolio/army2.jpg" data-title="Client: <a href='http://www.stephanieaquinosmith.com/' target='_blank'>Stephanie Smith</a>&nbsp;&bull;&nbsp;Project: Editorial&nbsp;&bull;&nbsp;Photographer: <a href='http://www.stephanieaquinosmith.com/' target='_blank'>Stephanie Smith</a>"><img src="img/portfolio/thumbs/army2.jpg" width="158" height="108"></a></li>
+          <li><a href="img/portfolio/army3.jpg" data-title="Client: <a href='http://www.stephanieaquinosmith.com/' target='_blank'>Stephanie Smith</a>&nbsp;&bull;&nbsp;Project: Editorial&nbsp;&bull;&nbsp;Photographer: <a href='http://www.stephanieaquinosmith.com/' target='_blank'>Stephanie Smith</a>"><img src="img/portfolio/thumbs/army3.jpg" width="158" height="108"></a></li>
+          <li><a href="img/portfolio/army4.jpg" data-title="Client: <a href='http://www.stephanieaquinosmith.com/' target='_blank'>Stephanie Smith</a>&nbsp;&bull;&nbsp;Project: Editorial&nbsp;&bull;&nbsp;Photographer: <a href='http://www.stephanieaquinosmith.com/' target='_blank'>Stephanie Smith</a>"><img src="img/portfolio/thumbs/army4.jpg" width="158" height="108"></a></li>
 
-        <li><a href="img/portfolio/army5.jpg" data-title="Client: <a href='http://www.stephanieaquinosmith.com/' target='_blank'>Stephanie Smith</a>&nbsp;&bull;&nbsp;Project: Editorial&nbsp;&bull;&nbsp;Photographer: <a href='http://www.stephanieaquinosmith.com/' target='_blank'>Stephanie Smith</a>"><img src="img/portfolio/thumbs/army5.jpg" width="158" height="108"></a></li>
-        <li><a href="img/portfolio/ashleyvee1.jpg" data-title="Client: <a href='https://www.google.com/url?q=http://importbible.com/&usd=2&usg=ALhdy286aUAsu76R0s_MP37bplhvhWA4Mg' target='_blank'>Import Bible</a>&nbsp;&bull;&nbsp;Project: Clothing Brand Marketing&nbsp;&bull;&nbsp;Photographer: <a href='http://abraham-espiritu.tumblr.com/' target='_blank'>Abe Espiritu</a>"><img src="img/portfolio/thumbs/ashleyvee1.jpg" width="158" height="108"></a></li>
-        <li><a href="img/portfolio/ashleyvee2.jpg" data-title="Client: <a href='https://www.google.com/url?q=http://importbible.com/&usd=2&usg=ALhdy286aUAsu76R0s_MP37bplhvhWA4Mg' target='_blank'>Import Bible</a>&nbsp;&bull;&nbsp;Project: Clothing Brand Marketing&nbsp;&bull;&nbsp;Photographer: <a href='http://abraham-espiritu.tumblr.com/' target='_blank'>Abe Espiritu</a>"><img src="img/portfolio/thumbs/ashleyvee2.jpg" width="158" height="108"></a></li>
-        <li><a href="img/portfolio/ashleyvee3.jpg" data-title="Client: <a href='https://www.google.com/url?q=http://importbible.com/&usd=2&usg=ALhdy286aUAsu76R0s_MP37bplhvhWA4Mg' target='_blank'>Import Bible</a>&nbsp;&bull;&nbsp;Project: Clothing Brand Marketing&nbsp;&bull;&nbsp;Photographer: <a href='http://abraham-espiritu.tumblr.com/' target='_blank'>Abe Espiritu</a>"><img src="img/portfolio/thumbs/ashleyvee3.jpg" width="158" height="108"></a></li>
+          <li><a href="img/portfolio/army5.jpg" data-title="Client: <a href='http://www.stephanieaquinosmith.com/' target='_blank'>Stephanie Smith</a>&nbsp;&bull;&nbsp;Project: Editorial&nbsp;&bull;&nbsp;Photographer: <a href='http://www.stephanieaquinosmith.com/' target='_blank'>Stephanie Smith</a>"><img src="img/portfolio/thumbs/army5.jpg" width="158" height="108"></a></li>
+          <li><a href="img/portfolio/ashleyvee1.jpg" data-title="Client: <a href='https://www.google.com/url?q=http://importbible.com/&usd=2&usg=ALhdy286aUAsu76R0s_MP37bplhvhWA4Mg' target='_blank'>Import Bible</a>&nbsp;&bull;&nbsp;Project: Clothing Brand Marketing&nbsp;&bull;&nbsp;Photographer: <a href='http://abraham-espiritu.tumblr.com/' target='_blank'>Abe Espiritu</a>"><img src="img/portfolio/thumbs/ashleyvee1.jpg" width="158" height="108"></a></li>
+          <li><a href="img/portfolio/ashleyvee2.jpg" data-title="Client: <a href='https://www.google.com/url?q=http://importbible.com/&usd=2&usg=ALhdy286aUAsu76R0s_MP37bplhvhWA4Mg' target='_blank'>Import Bible</a>&nbsp;&bull;&nbsp;Project: Clothing Brand Marketing&nbsp;&bull;&nbsp;Photographer: <a href='http://abraham-espiritu.tumblr.com/' target='_blank'>Abe Espiritu</a>"><img src="img/portfolio/thumbs/ashleyvee2.jpg" width="158" height="108"></a></li>
+          <li><a href="img/portfolio/ashleyvee3.jpg" data-title="Client: <a href='https://www.google.com/url?q=http://importbible.com/&usd=2&usg=ALhdy286aUAsu76R0s_MP37bplhvhWA4Mg' target='_blank'>Import Bible</a>&nbsp;&bull;&nbsp;Project: Clothing Brand Marketing&nbsp;&bull;&nbsp;Photographer: <a href='http://abraham-espiritu.tumblr.com/' target='_blank'>Abe Espiritu</a>"><img src="img/portfolio/thumbs/ashleyvee3.jpg" width="158" height="108"></a></li>
+          <li><a href="img/portfolio/bachlr2.jpg" data-title="Client: <a href='http://www.bachelr.com/' target='_blank'>Bachelr.com</a>&nbsp;&bull;&nbsp;Project: Winter 2013 Lookbook&nbsp;&bull;&nbsp;Photographer: <a href='http://www.stephanieaquinosmith.com/' target='_blank'>Stephanie Smith</a>"><img src="img/portfolio/thumbs/bachlr2.jpg" width="158" height="108"></a></li>
+          <li><a href="img/portfolio/bachlr3.jpg" data-title="Client: <a href='http://www.bachelr.com/' target='_blank'>Bachelr.com</a>&nbsp;&bull;&nbsp;Project: Winter 2013 Lookbook&nbsp;&bull;&nbsp;Photographer: <a href='http://www.stephanieaquinosmith.com/' target='_blank'>Stephanie Smith</a>"><img src="img/portfolio/thumbs/bachlr3.jpg" width="158" height="108"></a></li>
 
-        <li><a href="img/portfolio/bachlr2.jpg" data-title="Client: <a href='http://www.bachelr.com/' target='_blank'>Bachelr.com</a>&nbsp;&bull;&nbsp;Project: Winter 2013 Lookbook&nbsp;&bull;&nbsp;Photographer: <a href='http://www.stephanieaquinosmith.com/' target='_blank'>Stephanie Smith</a>"><img src="img/portfolio/thumbs/bachlr2.jpg" width="158" height="108"></a></li>
+          <li><a href="img/portfolio/charito1.jpg" data-title="Client: <a href='https://www.facebook.com/Astralogik' target='_blank'>Charito Soriano, Recording Artist</a>&nbsp;&bull;&nbsp;Project: Press Kit Photos&nbsp;&bull;&nbsp;Photographer: David Nevarez"><img src="img/portfolio/thumbs/charito1.jpg" width="158" height="108"></a></li>
+          <li><a href="img/portfolio/charito2.jpg" data-title="Client: <a href='https://www.facebook.com/Astralogik' target='_blank'>Charito Soriano, Recording Artist</a>&nbsp;&bull;&nbsp;Project: Press Kit Photos&nbsp;&bull;&nbsp;Photographer: David Nevarez"><img src="img/portfolio/thumbs/charito2.jpg" width="158" height="108"></a></li>
+          <li><a href="img/portfolio/charito4.jpg" data-title="Client: <a href='https://www.facebook.com/Astralogik' target='_blank'>Charito Soriano, Recording Artist</a>&nbsp;&bull;&nbsp;Project: Press Kit Photos&nbsp;&bull;&nbsp;Photographer: David Nevarez"><img src="img/portfolio/thumbs/charito4.jpg" width="158" height="108"></a></li>
+          <li><a href="img/portfolio/charito5.jpg" data-title="Client: <a href='https://www.facebook.com/Astralogik' target='_blank'>Charito Soriano, Recording Artist</a>&nbsp;&bull;&nbsp;Project: Press Kit Photos&nbsp;&bull;&nbsp;Photographer: David Nevarez"><img src="img/portfolio/thumbs/charito5.jpg" width="158" height="108"></a></li>
+          <li><a href="img/portfolio/charito6.jpg" data-title="Client: <a href='https://www.facebook.com/Astralogik' target='_blank'>Charito Soriano, Recording Artist</a>&nbsp;&bull;&nbsp;Project: Press Kit Photos&nbsp;&bull;&nbsp;Photographer: David Nevarez"><img src="img/portfolio/thumbs/charito6.jpg" width="158" height="108"></a></li>
+          <li><a href="img/portfolio/charito7.jpg" data-title="Client: <a href='https://www.facebook.com/Astralogik' target='_blank'>Charito Soriano, Recording Artist</a>&nbsp;&bull;&nbsp;Project: Press Kit Photos&nbsp;&bull;&nbsp;Photographer: David Nevarez"><img src="img/portfolio/thumbs/charito7.jpg" width="158" height="108"></a></li>
+        </ul>
+      </div>
+    </div>
 
-        <li><a href="img/portfolio/bachlr3.jpg" data-title="Client: <a href='http://www.bachelr.com/' target='_blank'>Bachelr.com</a>&nbsp;&bull;&nbsp;Project: Winter 2013 Lookbook&nbsp;&bull;&nbsp;Photographer: <a href='http://www.stephanieaquinosmith.com/' target='_blank'>Stephanie Smith</a>"><img src="img/portfolio/thumbs/bachlr3.jpg" width="158" height="108"></a></li>
-        <li><a href="img/portfolio/charito1.jpg" data-title="Client: <a href='https://www.facebook.com/Astralogik' target='_blank'>Charito Soriano, Recording Artist</a>&nbsp;&bull;&nbsp;Project: Press Kit Photos&nbsp;&bull;&nbsp;Photographer: David Nevarez"><img src="img/portfolio/thumbs/charito1.jpg" width="158" height="108"></a></li>
-        <li><a href="img/portfolio/charito2.jpg" data-title="Client: <a href='https://www.facebook.com/Astralogik' target='_blank'>Charito Soriano, Recording Artist</a>&nbsp;&bull;&nbsp;Project: Press Kit Photos&nbsp;&bull;&nbsp;Photographer: David Nevarez"><img src="img/portfolio/thumbs/charito2.jpg" width="158" height="108"></a></li>
-        <li><a href="img/portfolio/charito4.jpg" data-title="Client: <a href='https://www.facebook.com/Astralogik' target='_blank'>Charito Soriano, Recording Artist</a>&nbsp;&bull;&nbsp;Project: Press Kit Photos&nbsp;&bull;&nbsp;Photographer: David Nevarez"><img src="img/portfolio/thumbs/charito4.jpg" width="158" height="108"></a></li>
-        <li><a href="img/portfolio/charito5.jpg" data-title="Client: <a href='https://www.facebook.com/Astralogik' target='_blank'>Charito Soriano, Recording Artist</a>&nbsp;&bull;&nbsp;Project: Press Kit Photos&nbsp;&bull;&nbsp;Photographer: David Nevarez"><img src="img/portfolio/thumbs/charito5.jpg" width="158" height="108"></a></li>
-        <li><a href="img/portfolio/charito6.jpg" data-title="Client: <a href='https://www.facebook.com/Astralogik' target='_blank'>Charito Soriano, Recording Artist</a>&nbsp;&bull;&nbsp;Project: Press Kit Photos&nbsp;&bull;&nbsp;Photographer: David Nevarez"><img src="img/portfolio/thumbs/charito6.jpg" width="158" height="108"></a></li>
+    <div class="slide">
+      <div class="content-container popup-gallery">
+        <ul class="clearfix">
 
-        <li><a href="img/portfolio/charito7.jpg" data-title="Client: <a href='https://www.facebook.com/Astralogik' target='_blank'>Charito Soriano, Recording Artist</a>&nbsp;&bull;&nbsp;Project: Press Kit Photos&nbsp;&bull;&nbsp;Photographer: David Nevarez"><img src="img/portfolio/thumbs/charito7.jpg" width="158" height="108"></a></li>
-        <li><a href="img/portfolio/charito8.jpg" data-title="Client: <a href='https://www.facebook.com/Astralogik' target='_blank'>Charito Soriano, Recording Artist</a>&nbsp;&bull;&nbsp;Project: Press Kit Photos&nbsp;&bull;&nbsp;Photographer: <a href='http://delumpaphotography.com/' target='_blank'>Jeff Delumpa</a>"><img src="img/portfolio/thumbs/charito8.jpg" width="158" height="108"></a></li>
-        <li><a href="img/portfolio/charito9.jpg" data-title="Client: <a href='https://www.facebook.com/Astralogik' target='_blank'>Charito Soriano, Recording Artist</a>&nbsp;&bull;&nbsp;Project: Press Kit Photos&nbsp;&bull;&nbsp;Photographer: <a href='http://delumpaphotography.com/' target='_blank'>Marianne Delumpa</a>"><img src="img/portfolio/thumbs/charito9.jpg" width="158" height="108"></a></li>
-        <li><a href="img/portfolio/jenn1.jpg" data-title="Client: <a href='http://www.jchoiphotography.com/' target='_blank'>Justin Choi</a>&nbsp;&bull;&nbsp;Project: Editorial&nbsp;&bull;&nbsp;Photographer: <a href='http://www.jchoiphotography.com/' target='_blank'>Justin Choi</a>"><img src="img/portfolio/thumbs/jenn1.jpg" width="158" height="108"></a></li>
-        <li><a href="img/portfolio/jenn2.jpg" data-title="Client: <a href='http://www.jchoiphotography.com/' target='_blank'>Justin Choi</a>&nbsp;&bull;&nbsp;Project: Editorial&nbsp;&bull;&nbsp;Photographer: <a href='http://www.jchoiphotography.com/' target='_blank'>Justin Choi</a>"><img src="img/portfolio/thumbs/jenn2.jpg" width="158" height="108"></a></li>
-        <li><a href="img/portfolio/jenn3.jpg" data-title="Client: <a href='http://www.jchoiphotography.com/' target='_blank'>Justin Choi</a>&nbsp;&bull;&nbsp;Project: Editorial&nbsp;&bull;&nbsp;Photographer: <a href='http://www.jchoiphotography.com/' target='_blank'>Justin Choi</a>"><img src="img/portfolio/thumbs/jenn3.jpg" width="158" height="108"></a></li>
+          <li><a href="img/portfolio/charito8.jpg" data-title="Client: <a href='https://www.facebook.com/Astralogik' target='_blank'>Charito Soriano, Recording Artist</a>&nbsp;&bull;&nbsp;Project: Press Kit Photos&nbsp;&bull;&nbsp;Photographer: <a href='http://delumpaphotography.com/' target='_blank'>Jeff Delumpa</a>"><img src="img/portfolio/thumbs/charito8.jpg" width="158" height="108"></a></li>
+          <li><a href="img/portfolio/charito9.jpg" data-title="Client: <a href='https://www.facebook.com/Astralogik' target='_blank'>Charito Soriano, Recording Artist</a>&nbsp;&bull;&nbsp;Project: Press Kit Photos&nbsp;&bull;&nbsp;Photographer: <a href='http://delumpaphotography.com/' target='_blank'>Marianne Delumpa</a>"><img src="img/portfolio/thumbs/charito9.jpg" width="158" height="108"></a></li>
+          <li><a href="img/portfolio/jenn1.jpg" data-title="Client: <a href='http://www.jchoiphotography.com/' target='_blank'>Justin Choi</a>&nbsp;&bull;&nbsp;Project: Editorial&nbsp;&bull;&nbsp;Photographer: <a href='http://www.jchoiphotography.com/' target='_blank'>Justin Choi</a>"><img src="img/portfolio/thumbs/jenn1.jpg" width="158" height="108"></a></li>
+          <li><a href="img/portfolio/jenn2.jpg" data-title="Client: <a href='http://www.jchoiphotography.com/' target='_blank'>Justin Choi</a>&nbsp;&bull;&nbsp;Project: Editorial&nbsp;&bull;&nbsp;Photographer: <a href='http://www.jchoiphotography.com/' target='_blank'>Justin Choi</a>"><img src="img/portfolio/thumbs/jenn2.jpg" width="158" height="108"></a></li>
+          <li><a href="img/portfolio/jenn3.jpg" data-title="Client: <a href='http://www.jchoiphotography.com/' target='_blank'>Justin Choi</a>&nbsp;&bull;&nbsp;Project: Editorial&nbsp;&bull;&nbsp;Photographer: <a href='http://www.jchoiphotography.com/' target='_blank'>Justin Choi</a>"><img src="img/portfolio/thumbs/jenn3.jpg" width="158" height="108"></a></li>
+          <li><a href="img/portfolio/jenn4.jpg" data-title="Client: <a href='http://www.jchoiphotography.com/' target='_blank'>Justin Choi</a>&nbsp;&bull;&nbsp;Project: Editorial&nbsp;&bull;&nbsp;Photographer: <a href='http://www.jchoiphotography.com/' target='_blank'>Justin Choi</a>"><img src="img/portfolio/thumbs/jenn4.jpg" width="158" height="108"></a></li>
 
-        <li><a href="img/portfolio/jenn4.jpg" data-title="Client: <a href='http://www.jchoiphotography.com/' target='_blank'>Justin Choi</a>&nbsp;&bull;&nbsp;Project: Editorial&nbsp;&bull;&nbsp;Photographer: <a href='http://www.jchoiphotography.com/' target='_blank'>Justin Choi</a>"><img src="img/portfolio/thumbs/jenn4.jpg" width="158" height="108"></a></li>
-        <li><a href="img/portfolio/jenn5.jpg" data-title="Client: <a href='http://www.jchoiphotography.com/' target='_blank'>Justin Choi</a>&nbsp;&bull;&nbsp;Project: Editorial&nbsp;&bull;&nbsp;Photographer: <a href='http://www.jchoiphotography.com/' target='_blank'>Justin Choi</a>"><img src="img/portfolio/thumbs/jenn5.jpg" width="158" height="108"></a></li>
-        <li><a href="img/portfolio/jenn6.jpg" data-title="Client: <a href='http://www.jchoiphotography.com/' target='_blank'>Justin Choi</a>&nbsp;&bull;&nbsp;Project: Editorial&nbsp;&bull;&nbsp;Photographer: <a href='http://www.jchoiphotography.com/' target='_blank'>Justin Choi</a>"><img src="img/portfolio/thumbs/jenn6.jpg" width="158" height="108"></a></li>
-        <li><a href="img/portfolio/ruby1.jpg" data-title="Client: <a href='https://www.facebook.com/pages/Ruby-Ibarra/225804540813954' target='_blank'>Ruby Ibarra, Recording Artist</a>&nbsp;&bull;&nbsp;Project: Press Kit Photos&nbsp;&bull;&nbsp;Photographer: Tricia Pagtakhan"><img src="img/portfolio/thumbs/ruby1.jpg" width="158" height="108"></a></li>
-        <li><a href="img/portfolio/ruby2.jpg" data-title="Client: <a href='https://www.facebook.com/pages/Ruby-Ibarra/225804540813954' target='_blank'>Ruby Ibarra, Recording Artist</a>&nbsp;&bull;&nbsp;Project: Press Kit Photos&nbsp;&bull;&nbsp;Photographer: Tricia Pagtakhan"><img src="img/portfolio/thumbs/ruby2.jpg" width="158" height="108"></a></li>
-        <li><a href="img/portfolio/ruby3.jpg" data-title="Client: <a href='https://www.facebook.com/pages/Ruby-Ibarra/225804540813954' target='_blank'>Ruby Ibarra, Recording Artist</a>&nbsp;&bull;&nbsp;Project: Press Kit Photos&nbsp;&bull;&nbsp;Photographer: Tricia Pagtakhan"><img src="img/portfolio/thumbs/ruby3.jpg" width="158" height="108"></a></li>
-        <li><a href="img/portfolio/ruby4.jpg" data-title="Client: <a href='https://www.facebook.com/pages/Ruby-Ibarra/225804540813954' target='_blank'>Ruby Ibarra, Recording Artist</a>&nbsp;&bull;&nbsp;Project: Press Kit Photos&nbsp;&bull;&nbsp;Photographer: Tricia Pagtakhan"><img src="img/portfolio/thumbs/ruby4.jpg" width="158" height="108"></a></li>
+          <li><a href="img/portfolio/jenn5.jpg" data-title="Client: <a href='http://www.jchoiphotography.com/' target='_blank'>Justin Choi</a>&nbsp;&bull;&nbsp;Project: Editorial&nbsp;&bull;&nbsp;Photographer: <a href='http://www.jchoiphotography.com/' target='_blank'>Justin Choi</a>"><img src="img/portfolio/thumbs/jenn5.jpg" width="158" height="108"></a></li>
+          <li><a href="img/portfolio/jenn6.jpg" data-title="Client: <a href='http://www.jchoiphotography.com/' target='_blank'>Justin Choi</a>&nbsp;&bull;&nbsp;Project: Editorial&nbsp;&bull;&nbsp;Photographer: <a href='http://www.jchoiphotography.com/' target='_blank'>Justin Choi</a>"><img src="img/portfolio/thumbs/jenn6.jpg" width="158" height="108"></a></li>
+          <li><a href="img/portfolio/ruby1.jpg" data-title="Client: <a href='https://www.facebook.com/pages/Ruby-Ibarra/225804540813954' target='_blank'>Ruby Ibarra, Recording Artist</a>&nbsp;&bull;&nbsp;Project: Press Kit Photos&nbsp;&bull;&nbsp;Photographer: Tricia Pagtakhan"><img src="img/portfolio/thumbs/ruby1.jpg" width="158" height="108"></a></li>
+          <li><a href="img/portfolio/ruby2.jpg" data-title="Client: <a href='https://www.facebook.com/pages/Ruby-Ibarra/225804540813954' target='_blank'>Ruby Ibarra, Recording Artist</a>&nbsp;&bull;&nbsp;Project: Press Kit Photos&nbsp;&bull;&nbsp;Photographer: Tricia Pagtakhan"><img src="img/portfolio/thumbs/ruby2.jpg" width="158" height="108"></a></li>
+          <li><a href="img/portfolio/ruby3.jpg" data-title="Client: <a href='https://www.facebook.com/pages/Ruby-Ibarra/225804540813954' target='_blank'>Ruby Ibarra, Recording Artist</a>&nbsp;&bull;&nbsp;Project: Press Kit Photos&nbsp;&bull;&nbsp;Photographer: Tricia Pagtakhan"><img src="img/portfolio/thumbs/ruby3.jpg" width="158" height="108"></a></li>
+          <li><a href="img/portfolio/ruby4.jpg" data-title="Client: <a href='https://www.facebook.com/pages/Ruby-Ibarra/225804540813954' target='_blank'>Ruby Ibarra, Recording Artist</a>&nbsp;&bull;&nbsp;Project: Press Kit Photos&nbsp;&bull;&nbsp;Photographer: Tricia Pagtakhan"><img src="img/portfolio/thumbs/ruby4.jpg" width="158" height="108"></a></li>
 
-        <li><a href="img/portfolio/ruby5.jpg" data-title="Client: <a href='https://www.facebook.com/pages/Ruby-Ibarra/225804540813954' target='_blank'>Ruby Ibarra, Recording Artist</a>&nbsp;&bull;&nbsp;Project: Press Kit Photos&nbsp;&bull;&nbsp;Photographer: Tricia Pagtakhan"><img src="img/portfolio/thumbs/ruby5.jpg" width="158" height="108"></a></li>
-        <li><a href="img/portfolio/vince1.jpg" data-title="Client: <a href='http://thewolfgram.com/' target='_blank'>Damian Wolfgram</a>&nbsp;&bull;&nbsp;Project: Editorial&nbsp;&bull;&nbsp;Photographer: <a href='http://thewolfgram.com/' target='_blank'>Damian Wolfgram</a>"><img src="img/portfolio/thumbs/vince1.jpg" width="158" height="108"></a></li>
-        <li><a href="img/portfolio/vince2.jpg" data-title="Client: <a href='http://thewolfgram.com/' target='_blank'>Damian Wolfgram</a>&nbsp;&bull;&nbsp;Project: Editorial&nbsp;&bull;&nbsp;Photographer: <a href='http://thewolfgram.com/' target='_blank'>Damian Wolfgram</a>"><img src="img/portfolio/thumbs/vince2.jpg" width="158" height="108"></a></li>
-        <li><a href="img/portfolio/vince3.jpg" data-title="Client: <a href='http://thewolfgram.com/' target='_blank'>Damian Wolfgram</a>&nbsp;&bull;&nbsp;Project: Editorial&nbsp;&bull;&nbsp;Photographer: <a href='http://thewolfgram.com/' target='_blank'>Damian Wolfgram</a>"><img src="img/portfolio/thumbs/vince3.jpg" width="158" height="108"></a></li>
-        <li><a href="img/portfolio/vince4.jpg" data-title="Client: <a href='http://thewolfgram.com/' target='_blank'>Damian Wolfgram</a>&nbsp;&bull;&nbsp;Project: Editorial&nbsp;&bull;&nbsp;Photographer: <a href='http://thewolfgram.com/' target='_blank'>Damian Wolfgram</a>"><img src="img/portfolio/thumbs/vince4.jpg" width="158" height="108"></a></li>
-        <li><a href="img/portfolio/vince5.jpg" data-title="Client: <a href='http://thewolfgram.com/' target='_blank'>Damian Wolfgram</a>&nbsp;&bull;&nbsp;Project: Editorial&nbsp;&bull;&nbsp;Photographer: <a href='http://thewolfgram.com/' target='_blank'>Damian Wolfgram</a>"><img src="img/portfolio/thumbs/vince5.jpg" width="158" height="108"></a></li>
+          <li><a href="img/portfolio/ruby5.jpg" data-title="Client: <a href='https://www.facebook.com/pages/Ruby-Ibarra/225804540813954' target='_blank'>Ruby Ibarra, Recording Artist</a>&nbsp;&bull;&nbsp;Project: Press Kit Photos&nbsp;&bull;&nbsp;Photographer: Tricia Pagtakhan"><img src="img/portfolio/thumbs/ruby5.jpg" width="158" height="108"></a></li>
+          <li><a href="img/portfolio/vince1.jpg" data-title="Client: <a href='http://thewolfgram.com/' target='_blank'>Damian Wolfgram</a>&nbsp;&bull;&nbsp;Project: Editorial&nbsp;&bull;&nbsp;Photographer: <a href='http://thewolfgram.com/' target='_blank'>Damian Wolfgram</a>"><img src="img/portfolio/thumbs/vince1.jpg" width="158" height="108"></a></li>
+          <li><a href="img/portfolio/vince2.jpg" data-title="Client: <a href='http://thewolfgram.com/' target='_blank'>Damian Wolfgram</a>&nbsp;&bull;&nbsp;Project: Editorial&nbsp;&bull;&nbsp;Photographer: <a href='http://thewolfgram.com/' target='_blank'>Damian Wolfgram</a>"><img src="img/portfolio/thumbs/vince2.jpg" width="158" height="108"></a></li>
+          <li><a href="img/portfolio/vince3.jpg" data-title="Client: <a href='http://thewolfgram.com/' target='_blank'>Damian Wolfgram</a>&nbsp;&bull;&nbsp;Project: Editorial&nbsp;&bull;&nbsp;Photographer: <a href='http://thewolfgram.com/' target='_blank'>Damian Wolfgram</a>"><img src="img/portfolio/thumbs/vince3.jpg" width="158" height="108"></a></li>
+          <li><a href="img/portfolio/vince4.jpg" data-title="Client: <a href='http://thewolfgram.com/' target='_blank'>Damian Wolfgram</a>&nbsp;&bull;&nbsp;Project: Editorial&nbsp;&bull;&nbsp;Photographer: <a href='http://thewolfgram.com/' target='_blank'>Damian Wolfgram</a>"><img src="img/portfolio/thumbs/vince4.jpg" width="158" height="108"></a></li>
+          <li><a href="img/portfolio/vince5.jpg" data-title="Client: <a href='http://thewolfgram.com/' target='_blank'>Damian Wolfgram</a>&nbsp;&bull;&nbsp;Project: Editorial&nbsp;&bull;&nbsp;Photographer: <a href='http://thewolfgram.com/' target='_blank'>Damian Wolfgram</a>"><img src="img/portfolio/thumbs/vince5.jpg" width="158" height="108"></a></li>
 
-
-      </ul>
+        </ul>
+      </div>
     </div>
   </div>
   
   <!-- About -->
   <div class="section" id="about" data-anchor="about">
     <div class="content-container">
-      <h1>Just testing it</h1>
+      <h1>'Hold your tongue!' added the Gryphon</h1>
+      <p>'Hold your tongue!' added the Gryphon, before Alice could speak again.  The Mock Turtle went on.</p>
+      <p>'We had the best of educations&mdash;in fact, we went to school every day&mdash;'</p>
+      <p>'I'VE been to a day-school, too,' said Alice; 'you needn't be so proud as all that.'</p>
+      <p>'With extras?' asked the Mock Turtle a little anxiously.</p>
+      <p>'Yes,' said Alice, 'we learned French and music.'</p>
     </div>
   </div>
   
   <!-- Press -->
   <div class="section" id="press" data-anchor="press">
-    <div class="content-container">
-      <h1>Looks good</h1>
+    <div class="slide">
+      <div class="content-container">
+        <ul class="clearfix">
+          <li class="snippet">
+
+          </li>
+          <li class="snippet">
+
+          </li>
+          <li class="snippet">
+
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="slide">
+      <div class="content-container">
+        <ul class="clearfix">
+          <li class="pic">1</li>
+          <li class="pic">2</li>
+        </ul>
+      </div>
     </div>
   </div>
 

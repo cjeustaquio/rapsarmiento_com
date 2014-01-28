@@ -29,3 +29,17 @@ header {
     text-decoration: underline;
   }
 }
+
+/* About */
+
+#about {
+  font-family: 'Lato', Helvetica, Arial, sans-serif;
+  font-weight: 300;
+  color: #fff;
+  line-height: 27px;
+
+  h1 {
+    text-transform: uppercase;
+    line-height: 45px;
+  }
+}
