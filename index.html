@@ -17,7 +17,9 @@
 
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
   <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
-
+  <script type="text/javascript">
+    
+  </script>
   <script src="js/vendor/jquery.slimscroll.min.js"></script>
   <script src="js/vendor/jquery.fullPage.min.js"></script>
   <script src="js/main.js"></script>
@@ -28,6 +30,13 @@
   <!--[if lt IE 7]>
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
   <![endif]-->
+  <!-- Preloader -->
+  <div id="preloader">
+    <div id="load-container">
+      <img src="img/logo-loading.png" />
+      <p>Loading...</p>
+    </div>
+  </div>
 
   <!-- Menu -->
   <div id="menu-container">
@@ -38,11 +47,11 @@
         </div>
         <div id="pages">
           <ul class="clearfix">
-            <li><a href="#Portfolio" id="portfolio-link">Portfolio</a></li>
-            <li><a href="#About" id="about-link">About</a></li>
-            <li><a href="#Press" id="press-link">Press</a></li>
+            <li data-menuanchor="Portfolio"><a href="#Portfolio" id="portfolio-link">Portfolio</a></li>
+            <li data-menuanchor="About"><a href="#About" id="about-link">About</a></li>
+            <li data-menuanchor="Press"><a href="#Press" id="press-link">Press</a></li>
             <li><a href="http://therapstarlife.tumblr.com" target="_blank" >Blog</a></li>
-            <li><a href="#Contact" id="contact-link">Contact</a></li>
+            <li data-menuanchor="Contact"><a href="#Contact" id="contact-link">Contact</a></li>
           </ul>
         </div>
       </header>
@@ -51,9 +60,7 @@
 
   <!-- Home -->
   <div class="section active" id="home">
-    <div class="content-container">
-      
-    </div>
+    <div id="cta-scroll">Scroll&nbsp;Down</div>
   </div>
 
   <!-- Portfolio -->
@@ -118,12 +125,11 @@
   <!-- About -->
   <div class="section" id="about" data-anchor="about">
     <div class="content-container">
-      <h1>'Hold your tongue!' added the Gryphon</h1>
-      <p>'Hold your tongue!' added the Gryphon, before Alice could speak again.  The Mock Turtle went on.</p>
-      <p>'We had the best of educations&mdash;in fact, we went to school every day&mdash;'</p>
-      <p>'I'VE been to a day-school, too,' said Alice; 'you needn't be so proud as all that.'</p>
-      <p>'With extras?' asked the Mock Turtle a little anxiously.</p>
-      <p>'Yes,' said Alice, 'we learned French and music.'</p>
+      <p>Rap Sarmiento is a fashion stylist, lifestyle writer, and creative consultant on a mission to leave his mark on the world. Based in San Francisco, he began styling up-and-coming artists to help craft their image.</p>
+      <p>In 2012 Rap joined renowned San Francisco vintage shop and artist collective, 31 RAX, as stylist and marketing coordinator. At the end of 2013, he took on the role of lead stylist for iCu, a fashion network of designers, stylists, models, photographers, and creative entrepreneurs.</p>
+      <p>Rap’s penchant for mixing streetwear, high fashion, and vintage pieces in editorial work has led to publish credits in USDM Freax, a Japanese streetwear magainze, and international fashion magazine, Vanity Fair. His eclectic personal style has caught the eyes of fashion brands such as William Rast, Cheap Monday, and Native Shoes who have featured his looks.</p>
+      <p>Rap maintains a lifestyle blog, the Rap Star Life, and also served as a contributing fashion writer for BakitWhy Entertainment. While writing for BWE, he also filmed and produced a mini web-series finding stylish individuals on the streets and at events. As an emerging voice in fashion, Rap has consulted for companies such as location based fashion app, WEARtoWHERE, and menswear flash sale site, Bachelr.com.</p>
+      <p>He continues to work with designers, photographers, brands, and artists to bring their creative visions to life.</p>
     </div>
   </div>
   
@@ -133,28 +139,28 @@
       <div class="content-container">
         <ul class="clearfix">
           <li class="snippet">
-            <p class="press-quote">
-              I pulled 3 all-nighters
+            <div class="press-quote">
+              <p>I pulled 3 all-nighters...</p>
+            </div>
+            <p class="press-link">
+              <a href="http://www.nativeshoes.com/news/love/native-shoes-community-lookbook-014" target="_blank">Native Shoes<br>Apr 2012</a>
             </p>
-            <a class="press-link" href="http://www.nativeshoes.com/news/love/native-shoes-community-lookbook-014">
-              Native Shoes, Apr 2012
-            </a>
           </li>
           <li class="snippet">
-            <p class="press-quote">
-              the colorful, inspirational and inventive
+            <div class="press-quote">
+              <p>The colorful<br>inspirational and inventive</p>
+            </div>
+            <p class="press-link">
+              <a href="http://thelifeandvibesof.com/2013/02/27/w-a-y-w-w-what-are-you-wearing-wednesdays-meet-rap/" target="_blank">The Life and Vibes of<br>Feb 2013</a>
             </p>
-            <a class="press-link" href="http://thelifeandvibesof.com/2013/02/27/w-a-y-w-w-what-are-you-wearing-wednesdays-meet-rap/">
-              The Life and Vibes of, Feb 2013
-            </a>
           </li>
           <li class="snippet">
-            <p class="press-quote">
-              unique style that is completely unpredictable
+            <div class="press-quote">
+              <p>Unique style that is completely unpredictable</p>
+            </div>
+            <p class="press-link">
+              <a href="http://www.pumpsandlipstick.com/2013/08/friday-feature-stylist-blogger-raphael.html" target="_blank">Pumps and Lipstick<br>Aug 2013</a>
             </p>
-            <a class="press-link" href="http://www.pumpsandlipstick.com/2013/08/friday-feature-stylist-blogger-raphael.html">
-              Pumps and Lipstick, Aug 2013
-            </a>
           </li>
         </ul>
       </div>
@@ -164,10 +170,24 @@
       <div class="content-container">
         <ul class="clearfix">
           <li class="pic">
-            <a class="press-link"></a>
+            <div class="press-pic">
+              <a class="" href="img/press-usdmfreax-l.jpg">
+                <img src="img/press-usdmfreax-s.jpg" />
+              </a>
+            </div>
+            <p class="press-link">
+              USDM Freax Magazine<br>No. 8 June 2013
+            </p>
           </li>
           <li class="pic">
-            <a class="press-link"></a>
+            <div class="press-pic">
+              <a class="" href="img/portfolio/jenn1.jpg">
+                <img src="img/press-vanityfair-s.jpg" />
+              </a>
+            </div>
+            <p class="press-link">
+              Vanity Fair<br>June 2013
+            </p>
           </li>
         </ul>
       </div>

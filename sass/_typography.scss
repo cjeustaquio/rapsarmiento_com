@@ -1,7 +1,10 @@
+body {
+  font-family: 'Lato', Helvetica, Arial, sans-serif;
+  line-height: 27px;
+}
 
 /* Menu */
 header {
-  font-family: 'Lato', Helvetica, Arial, sans-serif;
   font-weight: 300;
   font-size: 18px;
   text-transform: uppercase;
@@ -18,6 +21,20 @@ header {
   }
 }
 
+/* Home */
+#home {
+  #cta-scroll {
+    text-transform: uppercase;
+    color: #333;
+    font-size: 20px;
+    letter-spacing: 0.09em;
+
+    p {
+      color: #333;
+    }
+  }
+}
+
 /* Portfolio */
 .mfp-title {
   font-size: smaller;
@@ -31,9 +48,7 @@ header {
 }
 
 /* About */
-
 #about {
-  font-family: 'Lato', Helvetica, Arial, sans-serif;
   font-weight: 300;
   color: #fff;
   line-height: 27px;
@@ -41,5 +56,22 @@ header {
   h1 {
     text-transform: uppercase;
     line-height: 45px;
+  }
+}
+
+/* Press */
+#press {
+  font-weight: 300;
+  font-size: 28px;
+  line-height: 30px;
+
+  .press-link {
+    font-size: 24px;
+    color: #3cf;
+    margin: 0 15px;
+
+    a {
+      color: #3cf;  
+    }
   }
 }

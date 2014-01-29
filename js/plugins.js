@@ -28,11 +28,12 @@ $(document).ready(function() {
   $('.popup-gallery').magnificPopup({
     delegate: 'a',
     type: 'image',
-    tLoading: 'Loading image #%curr%...',
+    tLoading: 'Loading image...',
     mainClass: 'mfp-img-mobile',
     image:{
       titleSrc: 'data-title'
     },
+
     gallery:{
       enabled: true,
       navigateByImgClick: true,

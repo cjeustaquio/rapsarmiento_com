@@ -1278,7 +1278,39 @@ img.mfp-img {
   padding-top: 0;
 }
 
-/* line 1, ../sass/_base.scss */
+/* line 1, ../sass/_preloader.scss */
+#preloader {
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+  background: #fff;
+  /* this is important so it's not transparent */
+}
+/* line 11, ../sass/_preloader.scss */
+#preloader #load-container {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-top: -131.5px;
+  margin-left: -100px;
+}
+/* line 18, ../sass/_preloader.scss */
+#preloader #load-container p {
+  font-size: 18px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+/* line 2, ../sass/_base.scss */
+body a, body a:focus, body a:active, body a:hover {
+  outline: 0;
+}
+
+/* line 7, ../sass/_base.scss */
 .content-container {
   max-width: 1000px;
   margin: 0 auto;
@@ -1321,18 +1353,23 @@ header #pages ul {
 header #pages ul li {
   display: inline;
   float: left;
-  padding-right: 45px;
+  margin-right: 45px;
+  margin-bottom: 2px;
 }
-/* line 36, ../sass/_content.scss */
+/* line 37, ../sass/_content.scss */
 header #pages ul li a {
   line-height: 27px;
 }
-/* line 43, ../sass/_content.scss */
+/* line 41, ../sass/_content.scss */
+header #pages ul li.active {
+  border-bottom: 1px solid #000;
+}
+/* line 48, ../sass/_content.scss */
 header #pages ul li:last-child {
   padding-right: 0;
 }
 
-/* line 49, ../sass/_content.scss */
+/* line 54, ../sass/_content.scss */
 #home {
   background: url("../img/home-bg.jpg") black no-repeat center center fixed;
   -webkit-background-size: cover;
@@ -1340,8 +1377,20 @@ header #pages ul li:last-child {
   -o-background-size: cover;
   background-size: cover;
 }
+/* line 61, ../sass/_content.scss */
+#home #cta-scroll {
+  display: none;
+  position: absolute;
+  bottom: 0px;
+  left: 50%;
+  margin-bottom: 27px;
+  margin-left: -91.5px;
+  background-color: #fff;
+  opacity: 0.85;
+  padding: 10px;
+}
 
-/* line 57, ../sass/_content.scss */
+/* line 76, ../sass/_content.scss */
 #portfolio {
   background: url("../img/portfolio-bg.jpg") white no-repeat center center fixed;
   -webkit-background-size: cover;
@@ -1349,7 +1398,7 @@ header #pages ul li:last-child {
   -o-background-size: cover;
   background-size: cover;
 }
-/* line 64, ../sass/_content.scss */
+/* line 83, ../sass/_content.scss */
 #portfolio ul {
   list-style: none;
   display: block;
@@ -1358,7 +1407,7 @@ header #pages ul li:last-child {
   width: 100%;
   height: 100%;
 }
-/* line 74, ../sass/_content.scss */
+/* line 93, ../sass/_content.scss */
 #portfolio ul li {
   display: inline;
   float: left;
@@ -1367,24 +1416,24 @@ header #pages ul li:last-child {
   width: 158px;
   height: 108px;
 }
-/* line 84, ../sass/_content.scss */
+/* line 103, ../sass/_content.scss */
 #portfolio ul li:nth-child(6n+6) {
   margin-right: 0;
 }
-/* line 90, ../sass/_content.scss */
+/* line 109, ../sass/_content.scss */
 #portfolio .popup-gallery img {
   margin-bottom: 27px;
 }
-/* line 97, ../sass/_content.scss */
+/* line 116, ../sass/_content.scss */
 #portfolio .controlArrow .next, #portfolio .controlArrow .prev {
   border-color: transparent transparent transparent rgba(0, 0, 0, 0.5) !important;
 }
-/* line 102, ../sass/_content.scss */
+/* line 121, ../sass/_content.scss */
 #portfolio button.mfp-close {
   display: none;
 }
 
-/* line 108, ../sass/_content.scss */
+/* line 127, ../sass/_content.scss */
 #about {
   background: url("../img/about-bg.jpg") black no-repeat center center fixed;
   -webkit-background-size: contain;
@@ -1392,12 +1441,12 @@ header #pages ul li:last-child {
   -o-background-size: contain;
   background-size: contain;
 }
-/* line 115, ../sass/_content.scss */
+/* line 134, ../sass/_content.scss */
 #about h1, #about p {
   max-width: 494px;
 }
 
-/* line 121, ../sass/_content.scss */
+/* line 140, ../sass/_content.scss */
 #press ul {
   list-style: none;
   display: block;
@@ -1406,71 +1455,124 @@ header #pages ul li:last-child {
   width: 100%;
   height: 100%;
 }
-/* line 129, ../sass/_content.scss */
+/* line 148, ../sass/_content.scss */
 #press ul li {
   display: inline;
   float: left;
   margin-right: 10px;
+  margin-bottom: 20px;
   width: 324px;
   height: 405px;
   border: 1px solid #d9d9d9;
 }
-/* line 137, ../sass/_content.scss */
+/* line 157, ../sass/_content.scss */
 #press ul li.snippet {
   background: url("../img/press-snippet.jpg") white no-repeat center center;
 }
-/* line 141, ../sass/_content.scss */
+/* line 161, ../sass/_content.scss */
 #press ul li.pic {
   background: url("../img/press-pic.jpg") white no-repeat center center;
 }
-/* line 149, ../sass/_content.scss */
+/* line 164, ../sass/_content.scss */
+#press ul li.pic .press-pic {
+  margin: 15px 15px 27px 15px;
+}
+/* line 174, ../sass/_content.scss */
 #press ul li:last-child {
   margin-right: 0;
 }
+/* line 178, ../sass/_content.scss */
+#press .press-quote {
+  display: table;
+  margin: 27px 0;
+  height: 189px;
+}
+/* line 183, ../sass/_content.scss */
+#press .press-quote p {
+  display: table-cell;
+  vertical-align: middle;
+  padding: 0 65px 0 65px;
+  margin: 0;
+}
+
+/* line 1, ../sass/_typography.scss */
+body {
+  font-family: 'Lato', Helvetica, Arial, sans-serif;
+  line-height: 27px;
+}
 
 /* Menu */
-/* line 3, ../sass/_typography.scss */
+/* line 7, ../sass/_typography.scss */
 header {
-  font-family: 'Lato', Helvetica, Arial, sans-serif;
   font-weight: 300;
   font-size: 18px;
   text-transform: uppercase;
   letter-spacing: 0.09em;
 }
-/* line 10, ../sass/_typography.scss */
+/* line 13, ../sass/_typography.scss */
 header #wordmark {
   font-weight: 400;
   font-size: 22px;
 }
-/* line 15, ../sass/_typography.scss */
+/* line 18, ../sass/_typography.scss */
 header a {
   color: #000;
   text-decoration: none;
 }
 
+/* Home */
+/* line 26, ../sass/_typography.scss */
+#home #cta-scroll {
+  text-transform: uppercase;
+  color: #333;
+  font-size: 20px;
+  letter-spacing: 0.09em;
+}
+/* line 32, ../sass/_typography.scss */
+#home #cta-scroll p {
+  color: #333;
+}
+
 /* Portfolio */
-/* line 22, ../sass/_typography.scss */
+/* line 39, ../sass/_typography.scss */
 .mfp-title {
   font-size: smaller;
   color: #f3f3f3;
   padding-right: 50px;
 }
-/* line 27, ../sass/_typography.scss */
+/* line 44, ../sass/_typography.scss */
 .mfp-title a, .mfp-title a:visited {
   color: #f3f3f3;
   text-decoration: underline;
 }
 
 /* About */
-/* line 35, ../sass/_typography.scss */
+/* line 51, ../sass/_typography.scss */
 #about {
-  font-family: 'Lato', Helvetica, Arial, sans-serif;
   font-weight: 300;
   color: #fff;
   line-height: 27px;
 }
-/* line 41, ../sass/_typography.scss */
+/* line 56, ../sass/_typography.scss */
 #about h1 {
   text-transform: uppercase;
   line-height: 45px;
+}
+
+/* Press */
+/* line 63, ../sass/_typography.scss */
+#press {
+  font-weight: 300;
+  font-size: 28px;
+  line-height: 30px;
+}
+/* line 68, ../sass/_typography.scss */
+#press .press-link {
+  font-size: 24px;
+  color: #3cf;
+  margin: 0 15px;
+}
+/* line 73, ../sass/_typography.scss */
+#press .press-link a {
+  color: #3cf;
 }

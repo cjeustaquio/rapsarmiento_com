@@ -31,10 +31,15 @@ header {
       li {
         display: inline;
         float: left;
-        padding-right: 45px;
+        margin-right: 45px;
+        margin-bottom: 2px;
 
         a {
           line-height: 27px;
+        }
+
+        &.active {
+          border-bottom: 1px solid #000;
         }
 
       }
@@ -52,6 +57,20 @@ header {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+
+  #cta-scroll {
+    display: none;
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    margin-bottom: 27px; 
+    margin-left: -91.5px;
+    background-color: #fff;
+    opacity: 0.85;
+    padding: 10px;
+
+    
+  }
 }
 
 #portfolio {
@@ -130,6 +149,7 @@ header {
       display: inline;
       float: left;
       margin-right: 10px;
+      margin-bottom: 20px;
       width: 324px;
       height: 405px;
       border: 1px solid #d9d9d9;
@@ -140,6 +160,11 @@ header {
 
       &.pic {
         background: url( '../img/press-pic.jpg' ) #fff no-repeat center center;
+
+        .press-pic {
+          margin: 15px 15px 27px 15px;
+        }
+
       }
       
 
@@ -149,4 +174,19 @@ header {
   ul li:last-child {
     margin-right: 0;
   }
+
+  .press-quote {
+    display: table;
+    margin: 27px 0;
+    height: 189px;
+
+    p {
+      display: table-cell;
+      vertical-align: middle;
+      padding: 0 65px 0 65px;
+      margin: 0;
+    }
+
+  }
+
 }
