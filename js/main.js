@@ -67,11 +67,17 @@ $(document).ready(function() {
         }
       }
     });
+    
+    //scroll cta
+    $( '#cta-scroll' ).delay( 900 ).fadeIn( 1000 ).effect( "bounce", { times: 10 }, 4500 );
+  }
+
+  else {
+    $( '.section' ).css( 'overflow', 'auto' );
   }
 
   
 
-  //scroll cta
-  $( '#cta-scroll' ).delay( 900 ).fadeIn( 1000 ).effect( "bounce", { times: 10 }, 4500 );
+  
 
 });
