@@ -9,7 +9,7 @@ h1.heading {
   text-transform: uppercase;
   font-weight: 300;
   text-align: left;
-  
+
 }
 
 /* Menu */
@@ -81,6 +81,21 @@ header {
 
     a {
       color: #3cf;  
+    }
+  }
+}
+
+/* Contact */
+#contact {
+  h2 {
+    font-weight: 300;
+    text-transform: uppercase;
+    text-align: center;
+    color: #fff;
+    letter-spacing: 0.09em;
+
+    a {
+      color: #fff;
     }
   }
 }

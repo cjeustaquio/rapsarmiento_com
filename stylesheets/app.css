@@ -1396,8 +1396,8 @@ h1.heading {
   opacity: 0.85;
   padding: 10px;
 }
-/* line 78, ../sass/_content.scss */
-#home #cta-scroll #mobile-logo-container {
+/* line 79, ../sass/_content.scss */
+#home #mobile-logo-container {
   display: none;
 }
 
@@ -1504,6 +1504,15 @@ h1.heading {
   margin: 0;
 }
 
+/* line 202, ../sass/_content.scss */
+#contact {
+  background: url("../img/contact-bg.jpg") black no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
 /* Global */
 /* line 3, ../sass/_typography.scss */
 body {
@@ -1594,6 +1603,20 @@ header a {
   color: #3cf;
 }
 
+/* Contact */
+/* line 90, ../sass/_typography.scss */
+#contact h2 {
+  font-weight: 300;
+  text-transform: uppercase;
+  text-align: center;
+  color: #fff;
+  letter-spacing: 0.09em;
+}
+/* line 97, ../sass/_typography.scss */
+#contact h2 a {
+  color: #fff;
+}
+
 @media screen and (max-width: 1125px) {
   /* line 3, ../sass/_media.scss */
   h1.heading {
@@ -1642,47 +1665,71 @@ header a {
     max-width: 40%;
   }
 
-  /* line 48, ../sass/_media.scss */
+  /* line 47, ../sass/_media.scss */
+  #portfolio {
+    background-image: url("../img/portfolio-bg.jpg");
+    background-color: #fff;
+    background-repeat: repeat-y;
+    background-position: left top;
+    background-attachment: scroll;
+    background-size: auto;
+  }
+  /* line 61, ../sass/_media.scss */
   #portfolio .slide {
     float: none;
     width: 100%;
   }
-  /* line 54, ../sass/_media.scss */
+  /* line 67, ../sass/_media.scss */
   #portfolio ul {
     display: inline-block;
     margin: 0 auto;
     padding: 0;
   }
-  /* line 59, ../sass/_media.scss */
+  /* line 72, ../sass/_media.scss */
   #portfolio ul li {
     float: none;
   }
 
-  /* line 66, ../sass/_media.scss */
+  /* line 79, ../sass/_media.scss */
   #about p {
     text-align: left;
   }
 
-  /* line 72, ../sass/_media.scss */
+  /* line 85, ../sass/_media.scss */
   #press .slide {
     float: none;
   }
-  /* line 76, ../sass/_media.scss */
+  /* line 89, ../sass/_media.scss */
   #press ul {
     display: block;
     max-width: 326px;
     margin: 0 auto;
   }
+
+  /* line 96, ../sass/_media.scss */
+  #contact {
+    background-image: url("../img/contact-bg.jpg");
+    background-color: #000;
+    background-repeat: repeat-y;
+    background-position: left top;
+    background-attachment: scroll;
+    background-size: 100%;
+  }
+  /* line 104, ../sass/_media.scss */
+  #contact h2 {
+    margin: 0;
+    padding: 0;
+  }
 }
 @media screen and (max-width: 700px) {
-  /* line 90, ../sass/_media.scss */
+  /* line 117, ../sass/_media.scss */
   #home #mobile-logo-container #mobile-logo-wrap img {
     height: auto;
     max-width: 50%;
   }
 }
 @media screen and (max-width: 500px) {
-  /* line 104, ../sass/_media.scss */
+  /* line 131, ../sass/_media.scss */
   #home #mobile-logo-container #mobile-logo-wrap img {
     height: auto;
     max-width: 62%;

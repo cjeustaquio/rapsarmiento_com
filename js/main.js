@@ -31,7 +31,7 @@ $(document).ready(function() {
   console.log( windowWidth);
   console.log( windowHeight);
 
-  if ( windowWidth >= 1125 && windowHeight >= 850 ) {
+  if ( windowWidth >= 1125 && windowHeight >= 800 ) {
     $.fn.fullpage({
       anchors: ['Home', 'Portfolio', 'About', 'Press', 'Contact'],
       menu: '#menu-container',
