@@ -1,0 +1,53 @@
+@media screen and ( max-width: 1125px ) {
+
+  .content-container {
+    width: 100%;
+    max-width: 100%;
+    text-align: center;
+    margin: 0;
+  }
+
+  .section {
+    padding: 50px 15px;
+    width: 100%;
+    position: static;
+
+  }
+
+  #portfolio {
+    .slide {
+      float: none;
+      // text-align: center;
+      width: 100%;
+    }
+
+    ul {
+      display: inline-block;
+      margin: 0 auto;
+      padding: 0;
+
+      li {
+        float: none;
+      }
+    }
+  }
+
+  #about {
+    p {
+      text-align: left;
+    }
+  }
+
+  #press {
+    .slide {
+      float: none;
+    }
+
+    ul {
+      display: block;
+      max-width: 326px;
+      margin: 0 auto;
+    }
+  }
+
+}

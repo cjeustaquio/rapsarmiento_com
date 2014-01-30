@@ -1404,8 +1404,6 @@ header #pages ul li:last-child {
   display: block;
   margin: 0 auto;
   padding: 0;
-  width: 100%;
-  height: 100%;
 }
 /* line 93, ../sass/_content.scss */
 #portfolio ul li {
@@ -1575,4 +1573,53 @@ header a {
 /* line 73, ../sass/_typography.scss */
 #press .press-link a {
   color: #3cf;
+}
+
+@media screen and (max-width: 1125px) {
+  /* line 3, ../sass/_media.scss */
+  .content-container {
+    width: 100%;
+    max-width: 100%;
+    text-align: center;
+    margin: 0;
+  }
+
+  /* line 10, ../sass/_media.scss */
+  .section {
+    padding: 50px 15px;
+    width: 100%;
+    position: static;
+  }
+
+  /* line 18, ../sass/_media.scss */
+  #portfolio .slide {
+    float: none;
+    width: 100%;
+  }
+  /* line 24, ../sass/_media.scss */
+  #portfolio ul {
+    display: inline-block;
+    margin: 0 auto;
+    padding: 0;
+  }
+  /* line 29, ../sass/_media.scss */
+  #portfolio ul li {
+    float: none;
+  }
+
+  /* line 36, ../sass/_media.scss */
+  #about p {
+    text-align: left;
+  }
+
+  /* line 42, ../sass/_media.scss */
+  #press .slide {
+    float: none;
+  }
+  /* line 46, ../sass/_media.scss */
+  #press ul {
+    display: block;
+    max-width: 326px;
+    margin: 0 auto;
+  }
 }
