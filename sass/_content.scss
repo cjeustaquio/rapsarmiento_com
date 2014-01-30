@@ -51,6 +51,12 @@ header {
   }
 }
 
+h1.heading {
+  display: none;
+  margin: 0 0 50px 0;
+  padding: 0;
+}
+
 #home {
   background: url("../img/home-bg.jpg") #000 no-repeat center center fixed;
   -webkit-background-size: cover;
@@ -69,7 +75,9 @@ header {
     opacity: 0.85;
     padding: 10px;
 
-    
+   #mobile-logo-container {
+      display: none;
+   } 
   }
 }
 

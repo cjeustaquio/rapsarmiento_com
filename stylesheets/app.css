@@ -1370,6 +1370,13 @@ header #pages ul li:last-child {
 }
 
 /* line 54, ../sass/_content.scss */
+h1.heading {
+  display: none;
+  margin: 0 0 50px 0;
+  padding: 0;
+}
+
+/* line 60, ../sass/_content.scss */
 #home {
   background: url("../img/home-bg.jpg") black no-repeat center center fixed;
   -webkit-background-size: cover;
@@ -1377,7 +1384,7 @@ header #pages ul li:last-child {
   -o-background-size: cover;
   background-size: cover;
 }
-/* line 61, ../sass/_content.scss */
+/* line 67, ../sass/_content.scss */
 #home #cta-scroll {
   display: none;
   position: absolute;
@@ -1389,8 +1396,12 @@ header #pages ul li:last-child {
   opacity: 0.85;
   padding: 10px;
 }
+/* line 78, ../sass/_content.scss */
+#home #cta-scroll #mobile-logo-container {
+  display: none;
+}
 
-/* line 76, ../sass/_content.scss */
+/* line 84, ../sass/_content.scss */
 #portfolio {
   background: url("../img/portfolio-bg.jpg") white no-repeat center center fixed;
   -webkit-background-size: cover;
@@ -1398,14 +1409,14 @@ header #pages ul li:last-child {
   -o-background-size: cover;
   background-size: cover;
 }
-/* line 83, ../sass/_content.scss */
+/* line 91, ../sass/_content.scss */
 #portfolio ul {
   list-style: none;
   display: block;
   margin: 0 auto;
   padding: 0;
 }
-/* line 93, ../sass/_content.scss */
+/* line 101, ../sass/_content.scss */
 #portfolio ul li {
   display: inline;
   float: left;
@@ -1414,24 +1425,24 @@ header #pages ul li:last-child {
   width: 158px;
   height: 108px;
 }
-/* line 103, ../sass/_content.scss */
+/* line 111, ../sass/_content.scss */
 #portfolio ul li:nth-child(6n+6) {
   margin-right: 0;
 }
-/* line 109, ../sass/_content.scss */
+/* line 117, ../sass/_content.scss */
 #portfolio .popup-gallery img {
   margin-bottom: 27px;
 }
-/* line 116, ../sass/_content.scss */
+/* line 124, ../sass/_content.scss */
 #portfolio .controlArrow .next, #portfolio .controlArrow .prev {
   border-color: transparent transparent transparent rgba(0, 0, 0, 0.5) !important;
 }
-/* line 121, ../sass/_content.scss */
+/* line 129, ../sass/_content.scss */
 #portfolio button.mfp-close {
   display: none;
 }
 
-/* line 127, ../sass/_content.scss */
+/* line 135, ../sass/_content.scss */
 #about {
   background: url("../img/about-bg.jpg") black no-repeat center center fixed;
   -webkit-background-size: contain;
@@ -1439,12 +1450,12 @@ header #pages ul li:last-child {
   -o-background-size: contain;
   background-size: contain;
 }
-/* line 134, ../sass/_content.scss */
+/* line 142, ../sass/_content.scss */
 #about h1, #about p {
   max-width: 494px;
 }
 
-/* line 140, ../sass/_content.scss */
+/* line 148, ../sass/_content.scss */
 #press ul {
   list-style: none;
   display: block;
@@ -1453,7 +1464,7 @@ header #pages ul li:last-child {
   width: 100%;
   height: 100%;
 }
-/* line 148, ../sass/_content.scss */
+/* line 156, ../sass/_content.scss */
 #press ul li {
   display: inline;
   float: left;
@@ -1463,29 +1474,29 @@ header #pages ul li:last-child {
   height: 405px;
   border: 1px solid #d9d9d9;
 }
-/* line 157, ../sass/_content.scss */
+/* line 165, ../sass/_content.scss */
 #press ul li.snippet {
   background: url("../img/press-snippet.jpg") white no-repeat center center;
 }
-/* line 161, ../sass/_content.scss */
+/* line 169, ../sass/_content.scss */
 #press ul li.pic {
   background: url("../img/press-pic.jpg") white no-repeat center center;
 }
-/* line 164, ../sass/_content.scss */
+/* line 172, ../sass/_content.scss */
 #press ul li.pic .press-pic {
   margin: 15px 15px 27px 15px;
 }
-/* line 174, ../sass/_content.scss */
+/* line 182, ../sass/_content.scss */
 #press ul li:last-child {
   margin-right: 0;
 }
-/* line 178, ../sass/_content.scss */
+/* line 186, ../sass/_content.scss */
 #press .press-quote {
   display: table;
   margin: 27px 0;
   height: 189px;
 }
-/* line 183, ../sass/_content.scss */
+/* line 191, ../sass/_content.scss */
 #press .press-quote p {
   display: table-cell;
   vertical-align: middle;
@@ -1493,90 +1504,103 @@ header #pages ul li:last-child {
   margin: 0;
 }
 
-/* line 1, ../sass/_typography.scss */
+/* Global */
+/* line 3, ../sass/_typography.scss */
 body {
   font-family: 'Lato', Helvetica, Arial, sans-serif;
   line-height: 27px;
 }
 
+/* line 8, ../sass/_typography.scss */
+h1.heading {
+  text-transform: uppercase;
+  font-weight: 300;
+  text-align: left;
+}
+
 /* Menu */
-/* line 7, ../sass/_typography.scss */
+/* line 16, ../sass/_typography.scss */
 header {
   font-weight: 300;
   font-size: 18px;
   text-transform: uppercase;
   letter-spacing: 0.09em;
 }
-/* line 13, ../sass/_typography.scss */
+/* line 22, ../sass/_typography.scss */
 header #wordmark {
   font-weight: 400;
   font-size: 22px;
 }
-/* line 18, ../sass/_typography.scss */
+/* line 27, ../sass/_typography.scss */
 header a {
   color: #000;
   text-decoration: none;
 }
 
 /* Home */
-/* line 26, ../sass/_typography.scss */
+/* line 35, ../sass/_typography.scss */
 #home #cta-scroll {
   text-transform: uppercase;
   color: #333;
   font-size: 20px;
   letter-spacing: 0.09em;
 }
-/* line 32, ../sass/_typography.scss */
+/* line 41, ../sass/_typography.scss */
 #home #cta-scroll p {
   color: #333;
 }
 
 /* Portfolio */
-/* line 39, ../sass/_typography.scss */
+/* line 48, ../sass/_typography.scss */
 .mfp-title {
   font-size: smaller;
   color: #f3f3f3;
   padding-right: 50px;
 }
-/* line 44, ../sass/_typography.scss */
+/* line 53, ../sass/_typography.scss */
 .mfp-title a, .mfp-title a:visited {
   color: #f3f3f3;
   text-decoration: underline;
 }
 
 /* About */
-/* line 51, ../sass/_typography.scss */
+/* line 60, ../sass/_typography.scss */
 #about {
   font-weight: 300;
   color: #fff;
   line-height: 27px;
 }
-/* line 56, ../sass/_typography.scss */
+/* line 65, ../sass/_typography.scss */
 #about h1 {
   text-transform: uppercase;
   line-height: 45px;
 }
 
 /* Press */
-/* line 63, ../sass/_typography.scss */
+/* line 72, ../sass/_typography.scss */
 #press {
   font-weight: 300;
   font-size: 28px;
   line-height: 30px;
 }
-/* line 68, ../sass/_typography.scss */
+/* line 77, ../sass/_typography.scss */
 #press .press-link {
   font-size: 24px;
   color: #3cf;
   margin: 0 15px;
 }
-/* line 73, ../sass/_typography.scss */
+/* line 82, ../sass/_typography.scss */
 #press .press-link a {
   color: #3cf;
 }
 
 @media screen and (max-width: 1125px) {
   /* line 3, ../sass/_media.scss */
+  h1.heading {
+    display: block;
+  }
+
+  /* line 7, ../sass/_media.scss */
   .content-container {
     width: 100%;
     max-width: 100%;
@@ -1584,42 +1608,83 @@ header a {
     margin: 0;
   }
 
-  /* line 10, ../sass/_media.scss */
+  /* line 14, ../sass/_media.scss */
   .section {
     padding: 50px 15px;
     width: 100%;
     position: static;
   }
 
-  /* line 18, ../sass/_media.scss */
+  /* line 21, ../sass/_media.scss */
+  #home {
+    background: url("../img/home-bg-mobile.jpg") black repeat-y left top fixed;
+    -webkit-background-size: contain;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    background-size: contain;
+    height: 550px;
+  }
+  /* line 29, ../sass/_media.scss */
+  #home #mobile-logo-container {
+    display: table;
+    width: 100%;
+    height: 100%;
+  }
+  /* line 34, ../sass/_media.scss */
+  #home #mobile-logo-container #mobile-logo-wrap {
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+  }
+  /* line 39, ../sass/_media.scss */
+  #home #mobile-logo-container #mobile-logo-wrap img {
+    height: auto;
+    max-width: 40%;
+  }
+
+  /* line 48, ../sass/_media.scss */
   #portfolio .slide {
     float: none;
     width: 100%;
   }
-  /* line 24, ../sass/_media.scss */
+  /* line 54, ../sass/_media.scss */
   #portfolio ul {
     display: inline-block;
     margin: 0 auto;
     padding: 0;
   }
-  /* line 29, ../sass/_media.scss */
+  /* line 59, ../sass/_media.scss */
   #portfolio ul li {
     float: none;
   }
 
-  /* line 36, ../sass/_media.scss */
+  /* line 66, ../sass/_media.scss */
   #about p {
     text-align: left;
   }
 
-  /* line 42, ../sass/_media.scss */
+  /* line 72, ../sass/_media.scss */
   #press .slide {
     float: none;
   }
-  /* line 46, ../sass/_media.scss */
+  /* line 76, ../sass/_media.scss */
   #press ul {
     display: block;
     max-width: 326px;
     margin: 0 auto;
+  }
+}
+@media screen and (max-width: 700px) {
+  /* line 90, ../sass/_media.scss */
+  #home #mobile-logo-container #mobile-logo-wrap img {
+    height: auto;
+    max-width: 50%;
+  }
+}
+@media screen and (max-width: 500px) {
+  /* line 104, ../sass/_media.scss */
+  #home #mobile-logo-container #mobile-logo-wrap img {
+    height: auto;
+    max-width: 62%;
   }
 }
